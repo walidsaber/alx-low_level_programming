@@ -13,11 +13,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char alph;
-
-	for (alph = 'a'; alph <= 'z'; alph++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		putchar(alph);
+		putchar(n);
 	}
 	putchar('\n');
 	return (0);
