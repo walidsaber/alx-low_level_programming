@@ -13,12 +13,12 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int an = 0;
+	int an;
 
-	while (an < 10)
+	for (an = 0; an < 10; an++)
 	{
-printf("%d", an);
-an++;
+		printf("%d", an);
+		an++;
 	}
 	printf("\n");
 	return (0);
