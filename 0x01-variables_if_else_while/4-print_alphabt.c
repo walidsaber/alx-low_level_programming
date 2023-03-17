@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description : "A to Z lower to upper"
+ * Description : "a to z except some of "
  * Return: Always 0 (Success)
  */
 
@@ -15,12 +15,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	for (n = 'a'; n <= 'z'; n++)
 	{
+		if (n != 'q' && n != 'e')
+		{
 		putchar(n);
-	}
-	for (n = 'A'; n <= 'Z'; n++)
-	{
-		putchar(n);
-	}
+		}
+		}
 	putchar('\n');
 	return (0);
 }
