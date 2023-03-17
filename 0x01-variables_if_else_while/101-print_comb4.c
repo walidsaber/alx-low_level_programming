@@ -2,7 +2,7 @@
 
 /**
  * main - Entry poing
- * Description: "Prints all possible combinations of three different digits in an ascending order"
+ * Description: "Prints all possible combinations of three different digits"
  * Return: Always 0(Success)
  */
 int main(void)
