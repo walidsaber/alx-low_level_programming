@@ -17,6 +17,8 @@ int main(void)
 		{
 		for (a = 48; a <= 57; a++)
 		{
+			if (((a+k) > (i + j) && k>= i) || i < k)
+			{
 		putchar(i);
 		putchar(j);
 		putchar(' ');
@@ -30,10 +32,12 @@ int main(void)
 		{
 		putchar(',');
 		}
+			}
 		}
 		}
 		}
 	}
 	putchar('\n');
 return (0);
+
 }
