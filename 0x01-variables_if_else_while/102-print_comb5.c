@@ -24,6 +24,7 @@ int main(void)
 		putchar(a);
 		if (i + j == 114 && k + a == 114)
 		{
+			break;
 		}
 		else
 		{
