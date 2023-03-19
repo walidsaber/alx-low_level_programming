@@ -4,7 +4,6 @@
  * Description: "4 loops to print us two two-digit numbers comb"
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i, j, k, a;
