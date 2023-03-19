@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
  * main - Entry point
  * Description: "4 loops to print us two two-digit numbers comb"
@@ -17,7 +16,7 @@ int main(void)
 		{
 		for (a = 48; a <= 57; a++)
 		{
-			if (((a+k) > (i + j) && k>= i) || i < k)
+		if (((a + k) > (i  + j) && k >= i) || i < k)
 			{
 		putchar(i);
 		putchar(j);
@@ -32,7 +31,7 @@ int main(void)
 		{
 		putchar(',');
 		}
-			}
+		}
 		}
 		}
 		}
