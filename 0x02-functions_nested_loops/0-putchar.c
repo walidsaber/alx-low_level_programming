@@ -12,7 +12,9 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-	putchar(wd[i]);
+		char p = wd[i];
+
+	putchar(p);
 	}
 	putchar('\n');
 	return (0);
