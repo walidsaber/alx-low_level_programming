@@ -6,46 +6,39 @@
  */
 void jack_bauer(void)
 {
-int i, j;
-
-for (i = 0; i < 24; i++)
+int ht, ho, min_t, min_o, h_max;
+h_max = 58;
+ht = '0';
+while (ht < '3')
 {
-for (j = 0; j <= 59; j++)
+if (ht == '2')
 {
-if (i <= 9)
+h_max = '4';
+}
+ho = '0';
+while (ho < h_max)
 {
-if (j <= 9)
+min_t = '0';
+while (min_t < '6')
 {
-_putchar('0');
-_putchar('0' + i);
+min_o = '0';
+while (min_o < 58)
+{
+_putchar(ht);
+_putchar(ho);
 _putchar(':');
-_putchar('0');
-_putchar('0' + j);
+_putchar(min_t);
+_putchar(min_o);
+_putchar('\n');
+min_o++;
 }
-else
-{
-_putchar('0');
-_putchar('0' + i);
-_putchar(':');
-_putchar('0' + j);
+min_o = '0';
+min_t++;
 }
+min_t = '0';
+ho++;
 }
-else
-{
-if (j <= 9)
-{
-_putchar('0' + i);
-_putchar(':');
-_putchar('0');
-_putchar('0' + j);
-}
-else
-{
-_putchar('0' + i);
-_putchar(':');
-_putchar('0' + j);
-}
-}
-}
+ho = '0';
+ht++;
 }
 }
