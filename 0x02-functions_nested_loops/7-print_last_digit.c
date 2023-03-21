@@ -13,5 +13,6 @@ i = (i * -1);
 }
 i = (i % 10);
 _putchar(i);
+_putchar(i);
 return (i);
 }
