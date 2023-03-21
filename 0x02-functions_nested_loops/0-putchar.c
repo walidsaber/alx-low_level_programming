@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  * Description: "program to print _putchar"
@@ -12,10 +13,10 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		char p = wd[i];
+		char c = wd[i];
 
-	putchar(p);
+	_putchar(c);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
