@@ -12,3 +12,4 @@ int result;
 
 result = x + y;
 return (result);
+}
