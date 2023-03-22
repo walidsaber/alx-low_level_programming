@@ -12,7 +12,7 @@ int main(void)
 
 	unsigned long a = 1, b = 2, sum;
 
-	for (i = 1; i < 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		if (i != 98)
 		{
