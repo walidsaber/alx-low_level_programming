@@ -11,9 +11,9 @@ int main(void)
 	int i;
 	long a = 1, b = 2, sum;
 
-	for (i = 1; i <= 51; i++)
+	for (i = 1; i <= 50; i++)
 	{
-		if (i != 51)
+		if (i != 50)
 		{
 		printf("%ld, ", a);
 		sum = a + b;
