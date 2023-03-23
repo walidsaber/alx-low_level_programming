@@ -3,8 +3,6 @@
 /**
  * more_numbers - nums
  * Description: "from 0 to 14 followed by a new line"
- * @i: int
- * @x: int
  * Return: void
  */
 
