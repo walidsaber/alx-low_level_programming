@@ -13,7 +13,7 @@ void more_numbers(void)
 	{
 	while (x <= 14)
 	{
-		if ( x <= 9)
+		if (x <= 9)
 		{
 			_putchar('0' + x);
 			x++;
