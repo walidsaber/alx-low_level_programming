@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - 0 to 14
+ * more_numbers - nums
  * Return: void
  */
 
@@ -25,7 +25,6 @@ void more_numbers(void)
 			x++;
 		}
 	}
-	_putchar('\n');
 	x = 0;
 	}
 }
