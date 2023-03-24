@@ -9,14 +9,42 @@
 
 void print_number(int n)
 {
-	unsigned int stored = n;
+	unsigned int stored = n, count = 0, x = 1, divider = 1, k;
 
 	if (n < 0)
 	{
-		stored = n * -1;
 		_putchar(45);
+		n = n * -1;
+		stored = n;
 	}
-	if (stored / 10)
-		print_number(stored / 10);
-	_putchar((stored % 10) + '0');
+	else if (n == 0)
+	{
+		_putchar(48);
+	}
+	while (n != 0)
+	{
+		count++;
+		n = n / 10;
+	}
+	while (x < count)
+	{
+		divider = divider * 10;
+		x++;
+	}
+	for (k = 0; k < count; k++)
+	{
+		if (k == 0)
+		{
+			_putchar(stored / divider + '0');
+		}
+		else if (k >= 1)
+		{
+			_putchar((stored / divider) % 10 + '0');
+		}
+		else if (k == count - 1)
+		{
+			_putchar(stored % 10 + '0');
+		}
+		divider = divider / 10;
+	}
 }
