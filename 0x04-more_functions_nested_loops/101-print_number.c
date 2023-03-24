@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	int stored = n;
+	int stored = n, k, count = 0, x = 1, divider = 1;
 
 	if (stored < 0)
 	{
@@ -17,8 +17,6 @@ void print_number(int n)
 		n = n * -1;
 		_putchar(45);
 	}
-	int count = 0, x = 1, divider = 1, k;
-
 	while (n != 0)
 	{
 		count++;
@@ -45,5 +43,4 @@ void print_number(int n)
 		}
 		divider = divider / 10;
 	}
-	return (0);
 }
