@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	int stored = n;
+	unsigned int stored = n;
 
 	if (n < 0)
 	{
@@ -17,8 +17,6 @@ void print_number(int n)
 		_putchar(45);
 	}
 	if (stored / 10)
-	{
 		print_number(stored / 10);
-	}
 	_putchar((stored % 10) + '0');
 }
