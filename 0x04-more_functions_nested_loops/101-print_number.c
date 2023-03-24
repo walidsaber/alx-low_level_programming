@@ -47,5 +47,4 @@ void print_number(int n)
 		}
 		divider = divider / 10;
 	}
-	_putchar('\n');
 }
