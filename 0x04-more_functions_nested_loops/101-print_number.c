@@ -17,6 +17,10 @@ void print_number(int n)
 		n = n * -1;
 		_putchar(45);
 	}
+	else if (stored == 0)
+	{
+		_putchar(48);
+	}
 	while (n != 0)
 	{
 		count++;
