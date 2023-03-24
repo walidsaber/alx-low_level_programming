@@ -11,12 +11,12 @@ void print_number(int n)
 {
 	int stored = n;
 
-	if ( n < 0)
+	if (n < 0)
 	{
 		stored = n * -1;
 		_putchar(45);
 	}
-	if ( stored / 10)
+	if (stored / 10)
 	{
 		print_number(stored / 10);
 	}
