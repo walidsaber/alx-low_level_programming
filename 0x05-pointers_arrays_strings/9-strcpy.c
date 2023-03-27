@@ -4,6 +4,7 @@
  * *_strcpy - cpy
  * @dest: dest
  * @src: src
+ * Description: "copy"
  * Return: dest
  */
 
