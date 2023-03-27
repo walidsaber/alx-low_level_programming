@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- * print_rev - rev
- * @s: char
- * Return: Void
+ * rev_string - reverse
+ * @s: string
+ * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i = 0, count = 0;
 
 	while(s[i])
 	{
+
 		i++;
 		count++;
 	}
 	while(count--)
 	{
-		_putchar(s[count]);
+		putchar(s[count]);
 	}
-	_putchar('\n');
 }
-
