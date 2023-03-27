@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * puts2 - half
+ * @str: str
+ * Return: void
+ */
+
+void puts2(char *str)
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		_puchar(s[i]);
+		i += 2;
+	}
+}
