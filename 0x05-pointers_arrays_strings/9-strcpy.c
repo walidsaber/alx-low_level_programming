@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * *_strcpy - cpy
+ * *_strcpy -  cpy
  * @dest: dest
  * @src: src
  * Description: "copy"
  * Return: dest
  */
 
-char *_scrcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = -1;
 
