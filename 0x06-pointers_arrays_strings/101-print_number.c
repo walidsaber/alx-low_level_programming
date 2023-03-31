@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_number - printf
+ * print_number - printf
  * @n: num
  * Return: void
  */
