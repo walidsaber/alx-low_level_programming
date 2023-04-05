@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * sqrt - square root
+ * sqrt_r - square root
  * @n: int
  * @r: root srch
  * Return: root
  */
-int sqrt(int n, int r);
-int sqrt(int n, int r)
+int sqrt_r(int n, int r);
+int sqrt_r(int n, int r)
 {
 	if ((r * r) == n)
 	{
@@ -17,7 +17,7 @@ int sqrt(int n, int r)
 	{
 		return (-1);
 	}
-	return (sqrt(n, r + 1));
+	return (sqrt_r(n, r + 1));
 }
 /**
  * _sqrt_recursion - root
@@ -36,5 +36,5 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	return (sqrt(n, r));
+	return (sqrt_r(n, r));
 }
