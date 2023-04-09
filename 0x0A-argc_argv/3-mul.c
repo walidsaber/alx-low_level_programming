@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplication
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		reulst = a * b;
+		result = a * b;
 		printf("%d\n", result);
 	}
 	else
