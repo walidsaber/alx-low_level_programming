@@ -17,6 +17,11 @@ int main(int argc, char *argv[])
 
 	char *ptr;
 
+	if (argc == 1)
+	{
+		printf("0\n");
+	} else
+	{
 	for (k = 1; k < argc; k++)
 	{
 		ptr = argv[k];
@@ -42,6 +47,7 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
+	}
 	}
 	return (0);
 }
