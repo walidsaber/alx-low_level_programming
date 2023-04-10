@@ -38,11 +38,8 @@ int main(int argc, char *argv[])
 				num = num - 2;
 				count++;
 			}
-			else
-			{
-				num = num - 1;
-				count++;
-			}
+			num = num - 1;
+			count++;
 		}
 		printf("%d\n", count);
 	}
@@ -51,4 +48,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	return (0);
 }
