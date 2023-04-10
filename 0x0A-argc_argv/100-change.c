@@ -22,24 +22,23 @@ int main(int argc, char *argv[])
 			{
 				num = num - 25;
 				count++;
-			}
-			else if (num >= 10)
+			} else if (num >= 10)
 			{
 				num = num - 10;
 				count++;
-			}
-			else if (num >= 5)
+			} else if (num >= 5)
 			{
 				num = num - 5;
 				count++;
-			}
-			else if (num >= 2)
+			} else if (num >= 2)
 			{
 				num = num - 2;
 				count++;
-			}
+			} else
+			{
 			num = num - 1;
 			count++;
+			}
 		}
 		printf("%d\n", count);
 	}
