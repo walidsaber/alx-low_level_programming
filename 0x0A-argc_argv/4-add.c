@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, len, is_num = 1, k, sum = 0;
+	int i, len, is_num = 0, k, sum = 0;
 
 	char *ptr;
 
@@ -25,12 +25,14 @@ int main(int argc, char *argv[])
 		for (k = 1; k < argc; k++)
 		{
 			ptr = argv[k];
+			printf("%s len is :", ptr);
 			len = strlen(ptr);
+			printf("%d\n", len);
 			for (i = 0; i < len; i++)
 			{
-				if (!isdigit(*(ptr)))
+				if (isdigit(*(ptr + i)) == 0)
 				{
-					is_num = 0;
+					is_num = 1;
 					break;
 				}
 			}
