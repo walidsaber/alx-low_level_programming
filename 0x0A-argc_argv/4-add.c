@@ -25,9 +25,7 @@ int main(int argc, char *argv[])
 		for (k = 1; k < argc; k++)
 		{
 			ptr = argv[k];
-			printf("%s len is :", ptr);
 			len = strlen(ptr);
-			printf("%d\n", len);
 			for (i = 0; i < len; i++)
 			{
 				if (isdigit(*(ptr + i)) == 0)
