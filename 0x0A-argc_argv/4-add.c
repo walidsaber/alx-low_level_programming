@@ -22,32 +22,32 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	} else
 	{
-	for (k = 1; k < argc; k++)
-	{
-		ptr = argv[k];
-		len = strlen(ptr);
-		for (i = 0; i < len; i++)
+		for (k = 1; k < argc; k++)
 		{
-			if (!isdigit(*(ptr)))
+			ptr = argv[k];
+			len = strlen(ptr);
+			for (i = 0; i < len; i++)
 			{
-				is_num = 0;
-				break;
+				if (!isdigit(*(ptr)))
+				{
+					is_num = 0;
+					break;
+				}
 			}
 		}
-	}
-	if (is_num)
-	{
-		for (i = 0; i < argc; i++)
+		if (is_num)
 		{
-			sum += atoi(argv[i]);
+			for (i = 0; i < argc; i++)
+			{
+				sum += atoi(argv[i]);
+			}
+			printf("%d\n", sum);
 		}
-		printf("%d\n", sum);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 	return (0);
 }
