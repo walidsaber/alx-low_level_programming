@@ -4,7 +4,7 @@
 /**
  * _strdup - cpy
  * @str: string
- * @Return: the value cpy if success, NULL if null
+ * Return: the value cpy if success, - NULL if null
  */
 
 char *_strdup(char *str)
