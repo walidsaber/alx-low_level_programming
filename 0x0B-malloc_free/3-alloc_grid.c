@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * **alloc_grid - 2 dim
@@ -10,18 +10,18 @@
 int **alloc_grid(int width, int height)
 {
 	int i, k;
-
 	int **dim;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
+
 	dim = malloc(height * sizeof(int *));
 
 	for (i = 0; i < height; i++)
 	{
-		dim = malloc(sizeof(int) * width);
+		dim[i] = malloc(width * sizeof(int));
 
 		if (dim[i] == NULL)
 		{
@@ -41,5 +41,6 @@ int **alloc_grid(int width, int height)
 			dim[i][k] = 0;
 		}
 	}
+
 	return (dim);
 }
