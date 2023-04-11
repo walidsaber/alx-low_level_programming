@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	mem = counts2 + counts1;
-	sum = malloc(sizeof(char) * mem);
+	sum = malloc(sizeof(char) * (mem + 1));
 	for (i = 0; i <= counts1; i++)
 	{
 		sum[i] = s1[i];
