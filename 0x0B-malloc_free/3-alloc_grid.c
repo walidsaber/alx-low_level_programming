@@ -29,9 +29,12 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	for (k = 0; k < width; k++)
+	for (i = 0; i < height; i++)
 	{
-		dim[i][k] = 0;
+		for (k = 0; k < width; k++)
+		{
+			dim[i][k] = 0;
+		}
 	}
 	return (dim);
 }
