@@ -40,5 +40,6 @@ int **alloc_grid(int width, int height)
 			dim[i][k] = 0;
 		}
 	}
+	free(dim);
 	return (dim);
 }
