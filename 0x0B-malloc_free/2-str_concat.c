@@ -14,10 +14,7 @@ char *str_concat(char *s1, char *s2)
 
 	char *sum;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		;
-	} else if (s1 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
 	} else if (s2 == NULL)
@@ -38,6 +35,10 @@ char *str_concat(char *s1, char *s2)
 
 	mem = counts2 + counts1;
 	sum = malloc(sizeof(char) * (mem + 1));
+	if (sum == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i <= counts1; i++)
 	{
 		sum[i] = s1[i];
