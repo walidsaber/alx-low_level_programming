@@ -4,7 +4,7 @@
 /**
  * *_strdup - cpy
  * @str: string
- * @Return: cpy
+ * @Return: the value cpy if success, NULL if null
  */
 
 char *_strdup(char *str)
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		c++;
 		i++;
 	}
-	cpy = malloc(sizeof(char) * c);
+	cpy = malloc(sizeof(char) * (c + 1));
 	if (cpy == NULL)
 	{
 		return (NULL);
