@@ -11,6 +11,8 @@ char *_strdup(char *str)
 {
 	int i = 0, c = 0;
 
+	char *cpy;
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -20,8 +22,6 @@ char *_strdup(char *str)
 		c++;
 		i++;
 	}
-	char *cpy;
-
 	cpy = malloc(sizeof(char) * c);
 	if (cpy == NULL)
 	{
