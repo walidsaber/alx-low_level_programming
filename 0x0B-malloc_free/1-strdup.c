@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *_strdup - cpy
+ * _strdup - cpy
  * @str: string
  * @Return: the value cpy if success, NULL if null
  */
