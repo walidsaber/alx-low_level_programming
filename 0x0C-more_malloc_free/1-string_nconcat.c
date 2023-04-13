@@ -28,12 +28,16 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *sum = s1;
-	unsigned int i = 0, k = 0, size1 = 0, size2 = 0;
+	char *sum;
+	unsigned int i, k = 0, size1, size2, max;
 
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
-	sum = malloc(size1 + n + 1);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	sum = malloc(sizeof(char) * (size1 + n + 1));
 	if (sum == NULL)
 		return (NULL);
 	for (i = 0; i < size1; i++)
@@ -42,16 +46,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= size2)
 	{
-		n = size2;
+		max = size2;
 	} else
 	{
-		n = size1 + n;
+		max = size1 + n;
 	}
-	for (i = size1; i < n; i++)
+	for (i = size1; i < max; i++)
 	{
-		sum[i] = s2[k];
-		k++;
+		if (k < n)
+		{
+			sum[i] = s2[k];
+			k++;
+		} else
+		{
+			return (NULL);
+		}
 	}
+	sum[i] = '\0';
 
 	return (sum);
 }
