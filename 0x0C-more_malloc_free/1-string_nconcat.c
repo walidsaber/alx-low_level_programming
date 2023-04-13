@@ -31,12 +31,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *sum;
 	unsigned int i, k = 0, size1, size2, max;
 
-	size1 = _strlen(s1);
-	size2 = _strlen(s2);
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
 	sum = malloc(sizeof(char) * (size1 + n + 1));
 	if (sum == NULL)
 		return (NULL);
