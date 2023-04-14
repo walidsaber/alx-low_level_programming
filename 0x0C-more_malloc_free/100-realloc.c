@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _realloc - realloc func
+ * *_realloc - realloc func
  * @ptr: void
  * @old_size: old by
  * @new_size: new by
@@ -11,7 +11,7 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	int i;
+	unsigned int i;
 	char *ptr2, *data;
 	void *sum;
 
