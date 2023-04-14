@@ -15,13 +15,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	char *ptr2, *data;
 	void *sum;
 
-	if (ptr == NULL)
-	{
-		sum = malloc(new_size);
-		if (sum == NULL)
-			return (NULL);
-		return (sum);
-	}
 	if (new_size == old_size)
 	{
 		return (ptr);
@@ -30,6 +23,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
+	if (ptr == NULL)
+	{
+		sum = malloc(new_size);
+		if (sum == NULL)
+			return (NULL);
+		return (sum);
+	}
+
 	ptr2 = ptr;
 	sum = malloc(sizeof(ptr2) * new_size);
 	if (sum == NULL)
