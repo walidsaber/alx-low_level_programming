@@ -8,24 +8,17 @@
  * Return: NULL if min > max,
  * otherwise return arr
  */
-
 int *array_range(int min, int max)
 {
-	int *arr, i, k = 0, x;
+	int *arr, i, size = 0, k = 0;
 
 	if (min > max)
 		return (NULL);
-	for (i = min; i <= max; i++)
-		;
-	arr = malloc(sizeof(int) * i);
+	size = max - min;
+	arr = malloc(sizeof(int) * (size + 1));
 	if (arr == NULL)
 		return (NULL);
-	x = min;
-	for (i = min; i <= max; i++)
-	{
-		arr[k] = x;
-		x++;
-		k++;
-	}
+	for (i = 0; i < (size + 1); i++)
+		arr[i] = min++;
 	return (arr);
 }
