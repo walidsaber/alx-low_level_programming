@@ -3,7 +3,7 @@
 
 /**
  * free_dog - free dog
- * @d: name 
+ * @d: name
  * Return: void
  */
 
