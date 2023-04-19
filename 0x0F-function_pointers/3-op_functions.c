@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * op_add - add
@@ -46,7 +46,7 @@ int op_div(int a, int b)
  * @b: b
  * Return: result
  */
-int op_mod(int a, int b);
+int op_mod(int a, int b)
 {
 	return (a % b);
 }
