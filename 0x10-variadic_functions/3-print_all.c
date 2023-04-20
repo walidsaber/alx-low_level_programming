@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - print all types
- * @format: format type
- * @...: var number
- * Return: void
+ * print_all - print all types.
+ * @format: format type.
+ * @...: var number.
+ * Description: return any type.
  */
 
 void print_all(const char * const format, ...)
