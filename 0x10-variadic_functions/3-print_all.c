@@ -35,10 +35,11 @@ void print_all(const char * const format, ...)
 			case 's':
 				s_val = va_arg(type, char *);
 				if (s_val == NULL)
+				{
 					printf("(nil)");
+					break;
+				}
 				printf("%s", s_val);
-				break;
-			default:
 				break;
 		}
 		if (format[i - 1] && format[i + 1])
