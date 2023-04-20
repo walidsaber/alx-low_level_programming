@@ -3,16 +3,15 @@
 /**
  * print_all - print all types
  * @format: format type
+ * @...: var number
  * Return: void
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list type;
-	char c_val;
-	char *s_val;
-	int i_val;
-	int i;
+	char *s_val, c_val;
+	int i_val, i;
 	float f_val;
 
 	va_start(type, format);
