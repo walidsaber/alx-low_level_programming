@@ -9,8 +9,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list type;
-	char c_val, *s_val;
-	int i_val, i;
+	char c_val;
+	char *s_val;
+	int i_val;
+	int i;
 	float f_val;
 
 	va_start(type, format);
@@ -41,7 +43,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		
+		if (format[i - 1] && format[i + 1])
+			printf(", ");	
 		i++;
 	}
 	putchar('\n');
