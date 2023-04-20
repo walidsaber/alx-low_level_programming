@@ -1,5 +1,25 @@
 #include "variadic_functions.h"
 
+
+
+
+
+/**
+ * print_string - print
+ * @n: string
+ * return: none if n == NULL, otherwise return n
+ */
+
+void print_string(char *n)
+{
+	if (n == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", n);
+}
+
 /**
  * print_all - print all types.
  * @format: format type.
@@ -34,12 +54,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s_val = va_arg(type, char *);
-				if (s_val == NULL)
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s", s_val);
+				print_string(s_val);
 				break;
 		}
 		if (format[i - 1] && format[i + 1])
