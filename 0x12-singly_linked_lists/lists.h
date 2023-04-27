@@ -3,14 +3,14 @@
 #include <stddef.h>
 #include <stdio.h>
 
-struct node
+struct list_s
 {
-	char *str;
-	int len;
-	struct node* next;
+    char *str;
+    int len;
+    struct list_s* next;
 };
 
-typedef struct node list_t;
+typedef struct list_s list_t;
 
 size_t print_list(const list_t *h);
 
