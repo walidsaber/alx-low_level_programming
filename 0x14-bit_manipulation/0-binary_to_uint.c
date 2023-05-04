@@ -10,6 +10,8 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, k, multi = 1, sum = 0;
 
+	if (b == NULL)
+		return (0);
 	while (b[i])
 	{
 		if (b[i] != 49 && b[i] != 48)
