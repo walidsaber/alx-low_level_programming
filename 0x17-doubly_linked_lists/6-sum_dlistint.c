@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * sum_dlistint - some of values
  * @head : head pointer
