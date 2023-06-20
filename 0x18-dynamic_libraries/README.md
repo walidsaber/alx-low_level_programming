@@ -1,0 +1,1 @@
+readme dynamica lib
