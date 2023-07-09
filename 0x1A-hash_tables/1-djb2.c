@@ -1,7 +1,5 @@
 #include "hash_tables"
 
-
-
 /**
  * hash_djb2 - hsh f
  * @str: unsigned char
@@ -9,13 +7,13 @@
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
-	unsigned long int nm = 5381;
-	int i;
+	unsigned long int hash;
+	int c;
 
-	while ((i = *str++))
+	hash = 5381;
+	while ((c = *str++))
 	{
-		nm = ((nm << 5) + nm) + i;
+		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
 	}
-
-	return (nm);
+	return (hash);
 }
