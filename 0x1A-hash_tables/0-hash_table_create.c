@@ -15,13 +15,13 @@ hash_table_t *hash_table_create(unsigned long int size)
 		fprintf(stderr, "Error: malloc failed\n");
 		return (NULL);
 	}
+	htabl->size = size;
 	htabl->array = malloc(sizeof(hash_node_t *) * size);
 	if (htabl->array == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
 		return (NULL);
 	}
-	htabl->size = size;
 	for (it = 0; it < size; it++)
 		htabl->array[it] = NULL;
 	return (htabl);
